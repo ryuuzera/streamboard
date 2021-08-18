@@ -34,8 +34,8 @@ namespace streamboard
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbSubtitle = new System.Windows.Forms.Label();
             this.lbTitle = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -108,6 +108,7 @@ namespace streamboard
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // frmMain
             // 
