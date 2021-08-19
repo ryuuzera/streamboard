@@ -48,14 +48,17 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\Model\Streamboard.Model.FMButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="src\View\Pages\Streamboard.View.pageProfiles.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="src\View\Pages\Streamboard.View.pageProfiles.Designer.cs">
       <DependentUpon>Streamboard.View.pageProfiles.cs</DependentUpon>
     </Compile>
-    <Compile Include="src\Streamboard.View.Main.Designer.cs" />
-    <Compile Include="src\Streamboard.View.Main.Designer.Designer.cs">
+    <Compile Include="src\View\Streamboard.View.Main.Designer.cs" />
+    <Compile Include="src\View\Streamboard.View.Main.Designer.Designer.cs">
       <DependentUpon>Streamboard.View.Main.Designer.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -71,7 +74,7 @@
     <EmbeddedResource Include="src\View\Pages\Streamboard.View.pageProfiles.resx">
       <DependentUpon>Streamboard.View.pageProfiles.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Streamboard.View.Main.Designer.resx">
+    <EmbeddedResource Include="src\View\Streamboard.View.Main.Designer.resx">
       <DependentUpon>Streamboard.View.Main.Designer.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -89,6 +92,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\steam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\streamlabs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\chrome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\spotfy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\twitch.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
